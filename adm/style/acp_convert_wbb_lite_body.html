@@ -1,0 +1,24 @@
+<!-- INCLUDE overall_header.html -->
+
+<h1>{L_ACP_CONVERT_WBB_LITE}</h1>
+
+<form id="acp_board" method="post" action="{U_ACTION}">
+
+	<fieldset>
+		<legend>{L_SETTINGS}</legend>
+		<dl>
+			<dt><label for="ConvertWbbLite_doConversion">{L_CONVERT_WBB_LITE_DO_CONVERSION}{L_COLON}</label></dt>
+			<dd><label><input type="radio" class="radio" name="ConvertWbbLite_doConversion" value="1" /> {L_YES}</label>
+				<label><input type="radio" class="radio" name="ConvertWbbLite_doConversion" value="0" checked="checked" /> {L_NO}</label></dd>
+		</dl>
+	</fieldset>
+
+	<fieldset class="submit-buttons">
+		<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+		<input class="button2" type="submit" name="preview" value="{L_PREVIEW}" />
+		{S_FORM_TOKEN}
+	</fieldset>
+
+</form>
+
+<!-- INCLUDE overall_footer.html -->

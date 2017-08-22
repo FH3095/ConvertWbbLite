@@ -1,0 +1,22 @@
+services:
+    FH3095.ConvertWbbLite.listener:
+        class: FH3095\ConvertWbbLite\event\main_listener
+        tags:
+            - { name: event.listener }
+
+    FH3095.ConvertWbbLite.service:
+        class: FH3095\ConvertWbbLite\service
+        arguments:
+            - '@user'
+            - '@language'
+            - '@dbal.conn'
+            - '@config'
+            - '@user_loader'
+            - '@mimetype.guesser'
+            - '%tables.users%'
+            - '%tables.groups%'
+            - '%tables.topics%'
+            - '%tables.posts%'
+            - '%tables.attachments%'
+            - '%core.root_path%'
+            - '%core.php_ext%'
