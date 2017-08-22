@@ -1,0 +1,22 @@
+<?php
+define('CONVERT_WBB_HOST', 'localhost');
+define('CONVERT_WBB_DB', 'wbb_db');
+define('CONVERT_WBB_USER', 'root');
+define('CONVERT_WBB_PASS', 'password');
+define('CONVERT_WBB_TABLE_USERS', 'wcf1_user');
+define('CONVERT_WBB_TABLE_AVATARS', 'wcf1_avatar');
+define('CONVERT_WBB_TABLE_THREADS', 'wbb1_1_thread');
+define('CONVERT_WBB_TABLE_POSTS', 'wbb1_1_post');
+define('CONVERT_WBB_TABLE_POLLS', 'wcf1_poll');
+define('CONVERT_WBB_TABLE_POLL_OPTIONS', 'wcf1_poll_option');
+define('CONVERT_WBB_TABLE_ATTACHMENTS', 'wcf1_attachment');
+define('CONVERT_WBB_AVATAR_FOLDER', 
+		'/srv/www/wbb/wcf/images/avatars/');
+define('CONVERT_WBB_ATTACHMENTS_FOLDER', 
+		'/srv/www/wbb/wcf/attachments/');
+define('CONVERT_WBB_OLD_USERS_GROUP', 9);
+$GLOBALS['CONVERT_WBB_FORUM_MAPPING'] = array(
+	1 => 2,
+	3 => 35,
+	20 => 10,
+);
